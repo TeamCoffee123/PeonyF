@@ -8,11 +8,11 @@ public class SpiritMonsterLevel1<monsterlevel> extends Monster{
     배열을 사용하여 표현하기로 결정
 */
 
-
+/*
     public void spiritMonsterLevel1(String name, int level, int hp, int power, int stone) {
         super.Monster(monsterName,monsterLevel,monsterHp,power,stoneOfSpirit);
     }
-
+*/
     public String setSpirit1Name(int level) //레벨에 따른 이름과 내용 출력
     {
         if(monsterLevel ==1)
@@ -28,6 +28,8 @@ public class SpiritMonsterLevel1<monsterlevel> extends Monster{
         }
         return monsterName;
     } //setSpirit1Name 끝
+
+
 
 
 
