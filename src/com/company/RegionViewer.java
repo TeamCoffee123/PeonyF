@@ -35,20 +35,24 @@ public class RegionViewer {
                 {
                     middle.SetMiddle();
                     //던전입장 가능
+
                 }
                 else
                 {
                     System.out.println("중간로 이동하기엔 레벨이 낮습니다.");
+
                 }
                 break;
             case 3 :
                 if(level.treeHeight >= 90)
                 {
                     //던전입장 가능
+
                 }
                 else
                 {
                     System.out.println("천상계로 이동하기엔 레벨이 낮습니다.");
+
                 }
                 break;
             case 4 :

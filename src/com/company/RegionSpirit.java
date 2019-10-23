@@ -7,7 +7,7 @@ public class RegionSpirit {
     정령지역의 레벨범위의 경우 랜덤함수를 받아 몬스터 랜덤 등장하도록 설정
      */
     Random rd = new Random();
-    int maxSpiritMonsterLevel=10; // 랜덤함수를 사용하기 위해 정령계 몬스터 최대레벨 설정
+    int maxSpiritMonsterLevel=9; // 랜덤함수를 사용하기 위해 정령계 몬스터 최대레벨 설정
     int randSpiritMonsterLevel;
 
     Monster monster = new Monster();
@@ -20,11 +20,14 @@ public class RegionSpirit {
     public void SetSpirit()
     {
         //monsterLevel.monsterLevel=rd.nextInt(maxSpiritMonsterLevel); //몬스터랜덤레벨을 몬스터 level로 전달
-        randSpiritMonsterLevel=rd.nextInt(maxSpiritMonsterLevel);
+        randSpiritMonsterLevel=rd.nextInt(maxSpiritMonsterLevel)+1;
         monster.monsterLevel=randSpiritMonsterLevel;
+
+        //System.out.println("출력확인"+randSpiritMonsterLevel);
 
         if(randSpiritMonsterLevel==1 || randSpiritMonsterLevel ==2)
         {
+           // System.out.println("1,2");
             sLevel1.setSpirit1Name(randSpiritMonsterLevel);
             /*
             랜덤으로 레벨을 받아,
@@ -36,21 +39,25 @@ public class RegionSpirit {
 
         else if(randSpiritMonsterLevel==3 || randSpiritMonsterLevel ==4)
         {
+           // System.out.println("3,4");
             sLevel2.setSpirit2Name(randSpiritMonsterLevel);
         }
 
         else if(randSpiritMonsterLevel==5 || randSpiritMonsterLevel ==6)
         {
+            //System.out.println("5,6");
             sLevel3.setSpirit3Name(randSpiritMonsterLevel);
         }
 
         else if(randSpiritMonsterLevel==7 || randSpiritMonsterLevel ==8)
         {
+            //System.out.println("7,8");
             sLevel4.setSpirit4Name(randSpiritMonsterLevel);
         }
 
         else if(randSpiritMonsterLevel==9 || randSpiritMonsterLevel ==10)
         {
+            //System.out.println("9,10");
             sLevel5.setSpirit5Name(randSpiritMonsterLevel);
         }
 
@@ -58,6 +65,7 @@ public class RegionSpirit {
         {
             System.out.println("SpiritMonsterLevel Error");
         }
+
 
         monster.serMonsterReward(randSpiritMonsterLevel);
         monster.setMonsterHp(randSpiritMonsterLevel);

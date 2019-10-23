@@ -20,16 +20,18 @@ public class SpiritMonsterLevel1 extends Monster{
 */
     public String setSpirit1Name(int level) //레벨에 따른 이름과 내용 출력
     {
-        if(monsterLevel ==1)
+        if(level  ==1)
         {
             monsterName="나가";
             System.out.println("[레벨 1 : 나가] 낄낄낄 너따위가 날 상대하겠다고? 쉭쉭 어디한번 싸워볼까?");
+            System.out.println();
         }
 
-        else if(monsterLevel ==2)
+        else if(level  ==2)
         {
             monsterName="고블린";
             System.out.println("[레벨 2 : 고블린] 정령....발견....죽인다......");
+            System.out.println();
         }
         return monsterName;
     } //setSpirit1Name 끝

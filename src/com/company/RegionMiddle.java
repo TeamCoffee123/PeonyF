@@ -7,7 +7,7 @@ public class RegionMiddle {
     중간지역의 레벨범위의 경우 랜덤함수를 받아 몬스터 랜덤 등장하도록 설정
      */
      Random rd = new Random();
-    int maxMiddleMonsterLevel=10; // 중간계최대레벨 10
+    int maxMiddleMonsterLevel=9; // 중간계최대레벨 10
     int randMiddleMonsterLevel;
 
     Monster monster = new Monster();
@@ -20,7 +20,7 @@ public class RegionMiddle {
     public void SetMiddle()
     {
         //monsterLevel.monsterLevel=rd.nextInt(maxMiddleMonsterLevel);
-        randMiddleMonsterLevel=rd.nextInt(maxMiddleMonsterLevel)+10; //랜덤함수 +10하여 11~20 레벨 몬스터 출력 및 몬스터 level로 전달
+        randMiddleMonsterLevel=rd.nextInt(maxMiddleMonsterLevel)+11; //랜덤함수 +10하여 11~20 레벨 몬스터 출력 및 몬스터 level로 전달
         monster.monsterLevel=randMiddleMonsterLevel;
 
         if(randMiddleMonsterLevel==11 || randMiddleMonsterLevel ==12)
