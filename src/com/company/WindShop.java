@@ -1,4 +1,7 @@
 package com.company;
 
-public class WindShop {
+public class WindShop  {
+    void sellWindItem() {
+
+    }
 }

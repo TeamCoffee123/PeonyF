@@ -1,4 +1,7 @@
 package com.company;
 
-public class WaterShop {
+public class WaterShop  {
+    void sellWaterItem() {
+
+    }
 }

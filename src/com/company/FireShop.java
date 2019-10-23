@@ -1,4 +1,8 @@
 package com.company;
 
-public class FireShop {
+public class FireShop  {
+    void sellFireItem() {
+
+    }
+
 }

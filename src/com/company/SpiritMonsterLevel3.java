@@ -1,4 +1,4 @@
 package com.company;
 
-public class SpiritMonsterLevel3 {
+public class SpiritMonsterLevel3  extends Monster{
 }
