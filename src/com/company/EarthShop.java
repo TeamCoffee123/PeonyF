@@ -28,6 +28,32 @@ public class EarthShop {
         System.out.println("설명: 이 아이템은 토지안에 벌레가 생겼을 경우, 벌레를 제거해주는 아이템 입니다.");
         System.out.println("―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――");
 
+/*
+        //구매를 이곳에 넣어야 할지 새로 메소드를 만들어야 할지
+        Scanner input = new Scanner(System.in);
+        System.out.print("구매하고 싶은 아이템을 입력하세요:\t");
+        String key = input.nextLine();
+        Scanner sc= new Scanner(System.in);
+
+        while(true)
+        {
+            System.out.println("구매하고 싶은 아이템 번호를 입력해주세요: ");
+            int select =sc.nextInt();
+
+            if(!earthItemList.containsKey(select));
+            {
+                System.out.println("잘못입력하셨습니다.");
+                continue;
+            }
+            else
+            {
+                System.out.println(select+"을 구매하겠는가?");
+                break;
+
+            }
+
+        }
+*/
 
 
 

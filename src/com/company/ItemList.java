@@ -13,7 +13,7 @@ public class ItemList {
 
     public String toString()
     {
-        return "[ Name: "+itemName+"\t Price: 정령의 돌 "+price +" 개\t ]";
+        return "[ Name: "+itemName+"\t Price: 정령의 돌 "+price +" 개 \t ]";
     }
 
 }
