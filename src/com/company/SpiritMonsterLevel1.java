@@ -10,7 +10,7 @@ public class SpiritMonsterLevel1 extends Monster{
     /*
     arraylist를 쓰려니 skill명과 power를 같이 표현할 방법이 없어서 pass
     hashmap을 사용하려 했으나 나중에 몬스터와의 싸움을 멀티쓰레드를 사용하고 싶어 pass
-    배열을 사용하여 표현하기로 결정
+    배열을 사용하여 표현하기로 결정 -> 스킬명과 공격력 배열을 두개 합쳐서 사용하고 싶은데 고민하고 있습니다.
 */
 
 /*
