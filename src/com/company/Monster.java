@@ -29,12 +29,6 @@ public class Monster {
         return monsterHp;
     }
 
-    public int serMonsterPower(int level)
-    {
-        monsterpower=level*10;
-        return monsterpower;
-    }
-
     public int serMonsterReward(int level)
     {
         stoneOfSpirit=level;

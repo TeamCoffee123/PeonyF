@@ -1,7 +1,12 @@
 package com.company;
 
-public class SpiritMonsterLevel1<monsterlevel> extends Monster{
-    //이름,레벨,skill 출력
+public class SpiritMonsterLevel1 extends Monster{
+    //이름,skill 출력
+
+    String[] spiritSkill1 ={"몸통박치기","물기","무기뺏기","단체공격"};
+    int[] spiritPower1 ={2,4,6,8};//최대 level*10
+
+
     /*
     arraylist를 쓰려니 skill명과 power를 같이 표현할 방법이 없어서 pass
     hashmap을 사용하려 했으나 나중에 몬스터와의 싸움을 멀티쓰레드를 사용하고 싶어 pass
