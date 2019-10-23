@@ -11,6 +11,7 @@ public class Monster {
 
     //
     // hp,힘,리워드
+    //monsterlevel과 fight를 어디로 받아서 해야할지 고민
 
     public void Monster(String name, int level, int hp, int power, int stone)
     {

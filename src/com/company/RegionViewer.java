@@ -4,7 +4,8 @@ import java.util.Scanner;
 
 public class RegionViewer {
     TreeHeight level = new TreeHeight();
-    SpiritMonsterLevel1 SPL1 = new SpiritMonsterLevel1();
+    //SpiritMonsterLevel1 SPL1 = new SpiritMonsterLevel1();
+    RegionSpirit spirit = new RegionSpirit();
     Scanner sc = new Scanner(System.in);
 
     public void RegionIn(){
@@ -23,7 +24,8 @@ public class RegionViewer {
         {
 
             case 1 :
-                SPL1.SpiritM1Call();
+                spirit.SetSpirit();
+                //SPL1.SpiritM1Call();
 
                 break;
             case 2 :

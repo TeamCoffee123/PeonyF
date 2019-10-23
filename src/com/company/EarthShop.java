@@ -29,7 +29,10 @@ public class EarthShop {
         System.out.println("―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――");
 
 /*
-        //구매를 이곳에 넣어야 할지 새로 메소드를 만들어야 할지
+        구매를 이곳에 넣어야 할지 새로 메소드를 만들어야 할지 모르겠습니다.
+        각 아이템 구매시 hashmap에서 각 아이템을 빼서 구매하도록 만들어야하는데, 1번 출력, 2번 출력 등을 할 줄 몰라 우선 비워뒀습니다.
+
+
         Scanner input = new Scanner(System.in);
         System.out.print("구매하고 싶은 아이템을 입력하세요:\t");
         String key = input.nextLine();
