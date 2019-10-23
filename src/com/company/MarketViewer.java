@@ -23,6 +23,7 @@ public class MarketViewer {
         System.out.println("――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――");
         System.out.println();
         System.out.println("1.불의 상점  2.물의 상점 3.바람의 상점  4.돌의 상점  5.상점나가기");
+        System.out.println("원하시는 지역을 선택해주세요 >>>>>>>\t");
         choice  = sc.nextInt();
         switch(choice)
         {

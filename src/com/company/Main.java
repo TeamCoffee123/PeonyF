@@ -7,7 +7,8 @@ public class Main {
     public static void main(String[] args) {
         // write your code here
         Scanner sc = new Scanner(System.in);
-        MarketViewer marketViewer = new MarketViewer();
+        MarketViewer marketViewer = new MarketViewer(); //상점 이동
+        RegionViewer regionViewer = new RegionViewer(); //던전 이동
 
         while (true) {
 
@@ -23,6 +24,7 @@ public class Main {
                 case 3: //정령의 나무 확인하기
                     break;
                 case 4: //사냥
+                    regionViewer.RegionIn();
                     break;
                 case 5: //정령마을 상점가기
                     marketViewer.In();
