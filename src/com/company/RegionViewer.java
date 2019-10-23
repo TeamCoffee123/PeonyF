@@ -6,6 +6,8 @@ public class RegionViewer {
     TreeHeight level = new TreeHeight();
     //SpiritMonsterLevel1 SPL1 = new SpiritMonsterLevel1();
     RegionSpirit spirit = new RegionSpirit();
+    RegionMiddle middle = new RegionMiddle();
+
     Scanner sc = new Scanner(System.in);
 
     public void RegionIn(){
@@ -31,6 +33,7 @@ public class RegionViewer {
             case 2 :
                 if(level.treeHeight >=60)
                 {
+                    middle.SetMiddle();
                     //던전입장 가능
                 }
                 else
