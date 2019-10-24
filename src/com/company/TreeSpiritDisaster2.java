@@ -2,6 +2,7 @@ package com.company;
 
 public class TreeSpiritDisaster2 {
     /*
+    아이템 획득시 발생
      물양 조절실패로 아이템 획득율 0.5% 하락
      */
 

@@ -8,7 +8,7 @@ public class TreeSpiritDisaster7 {
     String itemName = "잡초 증식 방지 아이템";
     int amount; //수량 확인
     int choice; //사용여부 확인
-    int waterAmount=6; //줄어드는 수분도 표시
+    int earthAmount=6; //줄어드는 비옥도 표시
 
     public void PrintSymptom()
     {

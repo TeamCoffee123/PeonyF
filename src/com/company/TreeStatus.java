@@ -3,6 +3,8 @@ package com.company;
 public class TreeStatus {
     int treeWater;
     int treeEarth;
+    int treeWind; //중간계 갔을때 확인 가능
+    int treeFire; //천상계 갔을때 확인 가능
     //int waterAmount;
     //int earthAmount;
 

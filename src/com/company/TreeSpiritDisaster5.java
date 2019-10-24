@@ -2,6 +2,7 @@ package com.company;
 
 public class TreeSpiritDisaster5 {
     /*
+    아이템 획득시 발생
     비옥땅 영양제-> 아이템 드랍율을 2배  증가
      */
 
