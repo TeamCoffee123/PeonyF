@@ -20,6 +20,27 @@ public class TreeDisasterViewer {
 
     Random rd = new Random();
 
+    //이게 아닌것 같은데..
+    TreeSpiritDisaster1 spiritD1 = new TreeSpiritDisaster1();
+    TreeSpiritDisaster2 spiritD2 = new TreeSpiritDisaster2();
+    TreeSpiritDisaster3 spiritD3 = new TreeSpiritDisaster3();
+    TreeSpiritDisaster4 spiritD4 = new TreeSpiritDisaster4();
+    TreeSpiritDisaster5 spiritD5 = new TreeSpiritDisaster5();
+    TreeSpiritDisaster6 spiritD6 = new TreeSpiritDisaster6();
+    TreeSpiritDisaster7 spiritD7 = new TreeSpiritDisaster7();
+    TreeSpiritDisaster8 spiritD8 = new TreeSpiritDisaster8();
+
+    TreeMiddleDisaster1 middleD1 = new TreeMiddleDisaster1();
+    TreeMiddleDisaster2 middleD2 = new TreeMiddleDisaster2();
+    TreeMiddleDisaster3 middleD3 = new TreeMiddleDisaster3();
+    TreeMiddleDisaster4 middleD4 = new TreeMiddleDisaster4();
+
+    TreeHeavenDisaster1 heavenD1 = new TreeHeavenDisaster1();
+    TreeHeavenDisaster2 heavenD2 = new TreeHeavenDisaster2();
+    TreeHeavenDisaster3 heavenD3 = new TreeHeavenDisaster3();
+    TreeHeavenDisaster4 heavenD4 = new TreeHeavenDisaster4();
+
+
     //randSpiritTreeDisaster=rd.nextInt(maxSpiritTreeDisaster)+1;
 
     public void separateTreeRegion()
@@ -43,7 +64,12 @@ public class TreeDisasterViewer {
         }
     }
 
-
+    /*
+    아이템 획득시 발생하는것 조건문 넣기
+    TreeSpiritDisaster2,TreeSpiritDisaster5,
+    TreeMiddleDisaster1,TreeMiddleDisaster4,
+    TreeHeavenDisaster4
+     */
 
 
     public void getTreeDisasterNum(int num)
@@ -52,8 +78,50 @@ public class TreeDisasterViewer {
 
         if(num==1)
         {
-
+            spiritD1.PrintSymptom();
         }
+
+        else if(num==2)
+        {
+            spiritD2.PrintSymptom();
+        }
+
+        else if(num==3)
+        {
+            spiritD3.PrintSymptom();
+        }
+
+        else if(num==4)
+        {
+            spiritD4.PrintSymptom();
+        }
+
+        else if(num==5)
+        {
+            spiritD5.PrintSymptom();
+        }
+
+        else if(num==6)
+        {
+            spiritD6.PrintSymptom();
+        }
+
+        else if(num==7)
+        {
+            spiritD7.PrintSymptom();
+        }
+
+        else if(num==8)
+        {
+            spiritD8.PrintSymptom();
+        }
+
+        else if(num==9)
+        {
+            middleD1.PrintSymptom();
+        }
+
+        //이렇게 하는게 맞는가...
 
     }
 
