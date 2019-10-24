@@ -3,7 +3,7 @@ import java.util.*;
 
 public class EarthShop {
     int price;
-    User user = new User();
+    //User user = new User();
 
 
     public void sellEarthItem() {
