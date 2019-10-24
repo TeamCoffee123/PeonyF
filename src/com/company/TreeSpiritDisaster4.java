@@ -9,7 +9,7 @@ public class TreeSpiritDisaster4 {
     String itemName = "물 오염 치료제";
     int amount; //수량 확인
     int choice; //사용여부 확인
-    int waterAmount=8; //줄어드는 수분도 표시
+    int waterAmount=6; //줄어드는 수분도 표시
 
     public void PrintSymptom()
     {

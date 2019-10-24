@@ -13,7 +13,7 @@ public class TreeSpiritDisaster3 {
 
     public void PrintSymptom()
     {
-        System.out.println("홍수가 발생하여 나무에 물이 들어오고 있습니다. ");
+        System.out.println("홍수가 발생하여 나무에 물이 흘러넘치고 있습니다. ");
         //나중에 스레드 사용 예정
     }
 }
