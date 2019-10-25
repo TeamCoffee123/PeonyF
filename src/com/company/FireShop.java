@@ -5,7 +5,6 @@ import java.util.HashMap;
 public class FireShop  {
     void sellFireItem() {
 
-        //HashMap 생성
         HashMap<Integer, ItemList> fireItemList = new HashMap<Integer, ItemList>();   //변수 여기서는 대문자를 써도 될까?
 
         //HashMap에 데이터 입력
