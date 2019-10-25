@@ -6,6 +6,7 @@ public class Main {
 
     public static void main(String[] args) {
         // coffeee
+        // write my code here
         Scanner sc = new Scanner(System.in);
         MarketViewer marketViewer = new MarketViewer(); //상점 이동
         RegionViewer regionViewer = new RegionViewer(); //던전 이동
