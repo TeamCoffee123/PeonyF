@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-        // write your code here
+        // coffeee
         Scanner sc = new Scanner(System.in);
         MarketViewer marketViewer = new MarketViewer(); //상점 이동
         RegionViewer regionViewer = new RegionViewer(); //던전 이동
