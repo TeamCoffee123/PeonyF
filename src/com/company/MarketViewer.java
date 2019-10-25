@@ -1,5 +1,10 @@
 package com.company;
 
+import com.company.shop.EarthShop;
+import com.company.shop.FireShop;
+import com.company.shop.WaterShop;
+import com.company.shop.WindShop;
+
 import java.util.Scanner;
 
 public class MarketViewer {

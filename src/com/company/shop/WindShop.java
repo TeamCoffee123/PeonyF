@@ -1,10 +1,12 @@
-package com.company;
+package com.company.shop;
+
+import com.company.ItemList;
 
 import java.util.HashMap;
 
 public class WindShop  {
     void sellWindItem() {
-        HashMap<Integer,ItemList> windItemList = new HashMap<Integer, ItemList>();   //변수 여기서는 대문자를 써도 될까?
+        HashMap<Integer, ItemList> windItemList = new HashMap<Integer, ItemList>();   //변수 여기서는 대문자를 써도 될까?
 
         //HashMap에 데이터 입력
         windItemList.put(1,new ItemList("아이템 유실 방지 주문서",7)); //아이템 유실 방지 주문서 : 바람이 강하게 불때 아이템이 날라가는것을 방어해 줍니다.

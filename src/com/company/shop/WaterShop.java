@@ -1,11 +1,13 @@
-package com.company;
+package com.company.shop;
+
+import com.company.ItemList;
 
 import java.util.HashMap;
 
 public class WaterShop  {
     void sellWaterItem() {
 
-        HashMap<Integer,ItemList> waterItemList = new HashMap<Integer, ItemList>();   //변수 여기서는 대문자를 써도 될까?
+        HashMap<Integer, ItemList> waterItemList = new HashMap<Integer, ItemList>();   //변수 여기서는 대문자를 써도 될까?
 
         //HashMap에 데이터 입력
         waterItemList.put(1,new ItemList("물 세균 번식 치료제",4)); //물 세균 번식 치료제 : 물 세균 번식이벤트 발생시 방어

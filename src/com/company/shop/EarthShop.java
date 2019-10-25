@@ -1,4 +1,6 @@
-package com.company;
+package com.company.shop;
+import com.company.ItemList;
+
 import java.util.*;
 
 public class EarthShop {
@@ -8,7 +10,7 @@ public class EarthShop {
 
     public void sellEarthItem() {
         //HashMap 생성
-        HashMap<Integer,ItemList> earthItemList = new HashMap<Integer, ItemList>();   //변수 여기서는 대문자를 써도 될까?
+        HashMap<Integer, ItemList> earthItemList = new HashMap<Integer, ItemList>();   //변수 여기서는 대문자를 써도 될까?
 
         //HashMap에 데이터 입력
         earthItemList.put(1,new ItemList("비옥땅 영양제",4)); //비옥땅 영양제 : 땅을 비옥하게 하는 아이템 , 아이템 드랍율 2배 증가

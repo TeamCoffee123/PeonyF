@@ -1,6 +1,4 @@
-package com.company;
-
-import java.util.Random;
+package com.company.region;
 
 public class RegionHeaven {
      /*
