@@ -1,4 +1,6 @@
-package com.company;
+package com.company.shop;
+
+import com.company.ItemList;
 
 import java.util.HashMap;
 

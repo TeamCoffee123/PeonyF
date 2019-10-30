@@ -1,4 +1,6 @@
-package com.company;
+package com.company.region;
+
+import com.company.monster.Monster;
 
 import java.util.Random;
 

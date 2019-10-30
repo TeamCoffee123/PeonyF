@@ -1,4 +1,6 @@
-package com.company;
+package com.company.region;
+
+import com.company.TreeHeight;
 
 import java.util.Scanner;
 

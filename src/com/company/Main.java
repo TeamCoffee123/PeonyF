@@ -1,5 +1,7 @@
 package com.company;
 
+import com.company.region.RegionViewer;
+
 import java.util.Scanner;
 
 public class Main {
@@ -10,6 +12,7 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         MarketViewer marketViewer = new MarketViewer(); //상점 이동
         RegionViewer regionViewer = new RegionViewer(); //던전 이동
+
 
         while (true) {
 
