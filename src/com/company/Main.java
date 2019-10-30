@@ -1,6 +1,7 @@
 package com.company;
 
-import com.company.region.RegionViewer;
+import com.company.region.MonsterRegionViewer;
+import com.company.shop.MarketViewer;
 
 import java.util.Scanner;
 
@@ -11,7 +12,7 @@ public class Main {
         // write my code here
         Scanner sc = new Scanner(System.in);
         MarketViewer marketViewer = new MarketViewer(); //상점 이동
-        RegionViewer regionViewer = new RegionViewer(); //던전 이동
+        MonsterRegionViewer regionViewer = new MonsterRegionViewer(); //던전 이동
 
         while (true) {
 

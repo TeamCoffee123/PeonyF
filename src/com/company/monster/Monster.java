@@ -6,6 +6,7 @@ public class Monster {
 
     private final String monsterName;
     private  final int monsterLevel;
+    private  final int iceMonsterLevel ;
     private int monsterHp;
     private ConcurrentMap<String,Integer> skills;
 
@@ -15,6 +16,7 @@ public class Monster {
    {
        this.monsterName = monsterName;
        this.monsterLevel = monsterLevel;
+       iceMonsterLevel= monsterLevel*2;
        monsterHp = monsterLevel*50;
    }
 
@@ -28,7 +30,9 @@ public class Monster {
        return monsterLevel;
    }
 
-   public int getMonsterHp()
+    public int getIceMonsterLevel() { return iceMonsterLevel; }
+
+    public int getMonsterHp()
    {
        return monsterHp;
    }
