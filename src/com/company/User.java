@@ -1,12 +1,9 @@
 package com.company;
 
-import java.util.ArrayList;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ConcurrentMap;
 
 public class User {
-
-
     /*
     각 마을 선택및 스킬 부여, hp 표현, 인벤토리 상태 print
      */
@@ -29,19 +26,29 @@ public class User {
         return userHp;
     }
 
-    private ConcurrentMap<String,Integer> userSkills;
+    public String getJob() {
+        return job;
+    }
+
+    //private ConcurrentMap<String,Integer> userSkills;
     private ConcurrentMap<String,Integer> inventory = new ConcurrentHashMap<>();
 
 
-    public void setUserSkills(ConcurrentMap<String,Integer> userSkills)
-    {
-        this.userSkills= userSkills;
-    }
-    public ConcurrentMap<String, Integer> getUserSkills() {
-        return userSkills;
-    }
+    //public void setUserSkills(ConcurrentMap<String,Integer> userSkills)
+    //{
+    //    this.userSkills= userSkills;
+    //}
+    // public ConcurrentMap<String, Integer> getUserSkills() {
+    //    return userSkills;
+    //}
 
     public void setInventory(ConcurrentMap<String,Integer> inventory){this.inventory=inventory; }
     public ConcurrentMap<String, Integer> getInventory() {return inventory;}
+
+    public void setJob()
+    {
+        String job = " ";
+
+    }
 
 }

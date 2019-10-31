@@ -10,7 +10,7 @@ public class SpiritMonsterFreinture extends Monster {
         final ConcurrentMap<String ,Integer> skills = new ConcurrentHashMap<>();
         skills.put("",12);
         skills.put("",14);
-        skills.put("",16);
+        skills.put("아이스 드랍",16);
         skills.put("강한 눈보라",18);
         setSkills(skills);
     }
