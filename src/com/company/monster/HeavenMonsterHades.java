@@ -8,7 +8,7 @@ public class HeavenMonsterHades extends Monster {
     {
         super("하데스",29);
         final ConcurrentMap<String,Integer> skills = new ConcurrentHashMap<>();
-        skills.put(" ",31);
+        skills.put("어둠의 정령 소환",31);
         skills.put(" ",33);
         skills.put(" ",35);
         skills.put(" ",37);

@@ -11,7 +11,7 @@ public class SpiritMonsterAmun extends Monster {
         skills.put("",9);
         skills.put("",11);
         skills.put("",13);
-        skills.put("",15);
+        skills.put("아이스 프리징",15);
         setSkills(skills);
     }
 

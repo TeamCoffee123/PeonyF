@@ -11,7 +11,7 @@ public class MiddleMonsterHyperion extends Monster {
         skills.put("",13);
         skills.put("",15);
         skills.put("",17);
-        skills.put("",19);
+        skills.put("파이어 브레스",19);
         setSkills(skills);
     }
 
