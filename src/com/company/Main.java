@@ -10,14 +10,25 @@ public class Main {
     public static void main(String[] args) {
         // coffeee
         // write my code here
-        Scanner sc = new Scanner(System.in);
-        MarketViewer marketViewer = new MarketViewer(); //상점 이동
-        MonsterRegionViewer regionViewer = new MonsterRegionViewer(); //던전 이동
+        final Scanner sc = new Scanner(System.in);
+        final MarketViewer marketViewer = new MarketViewer(); //상점 이동
+        final MonsterRegionViewer regionViewer = new MonsterRegionViewer(); //던전 이동
+
+         final User user = new User();
+
+        final JobViewer jobViewer = new JobViewer();
+        jobViewer.showMenu();
+
+
+        final int element = sc.nextInt();
+
+        final ElementType elementType = ElementType.findByNum(element);
+        jobViewer.initializeJob(user, elementType);
 
         while (true) {
 
             MenuViewer.showMenu();
-            int choice = MenuViewer.keyboard.nextInt();
+            final int choice = MenuViewer.keyboard.nextInt();
             MenuViewer.keyboard.nextLine();
 
             switch (choice) {
@@ -28,7 +39,7 @@ public class Main {
                 case 3: //정령의 나무 확인하기
                     break;
                 case 4: //사냥
-                    regionViewer.RegionIn();
+                    regionViewer.RegionIn(user);
                     break;
                 case 5: //정령마을 상점가기
                     marketViewer.In();

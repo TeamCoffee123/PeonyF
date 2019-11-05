@@ -1,14 +1,11 @@
 package com.company.userskills;
 
-import com.company.User;
-
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ConcurrentMap;
 
 public class UserWindSpirit extends UserSkills {
 
-    final ConcurrentMap userSkills = new ConcurrentHashMap<>();
-    public UserWindSpirit(String job, int uerLevel) {
+    public UserWindSpirit() {
         super("wind", 0);
         final ConcurrentMap<String,Integer> userSkills = new ConcurrentHashMap<>();
         userSkills.put("윈드 애로우",2);

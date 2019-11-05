@@ -9,12 +9,21 @@ public class User {
      */
     private int userHp;
     private int uerLevel;
-    private final String job;
+    private Job job;
 
-    public User(String job, int uerLevel)
-    {
-        userHp= uerLevel*50;
+    public User() {
+    }
+
+
+    public void setUserHp(int userHp) {
+        this.userHp = userHp;
+    }
+
+    public void setUerLevel(int uerLevel) {
         this.uerLevel = uerLevel;
+    }
+
+    public void setJob(Job job) {
         this.job = job;
     }
 
@@ -26,29 +35,22 @@ public class User {
         return userHp;
     }
 
-    public String getJob() {
+    public Job getJob() {
         return job;
     }
 
-    //private ConcurrentMap<String,Integer> userSkills;
-    private ConcurrentMap<String,Integer> inventory = new ConcurrentHashMap<>();
+    private ConcurrentMap<String, Integer> inventory = new ConcurrentHashMap<>();
 
+    public void setInventory(ConcurrentMap<String, Integer> inventory) {
+        this.inventory = inventory;
+    }
 
-    //public void setUserSkills(ConcurrentMap<String,Integer> userSkills)
-    //{
-    //    this.userSkills= userSkills;
-    //}
-    // public ConcurrentMap<String, Integer> getUserSkills() {
-    //    return userSkills;
-    //}
+    public ConcurrentMap<String, Integer> getInventory() {
+        return inventory;
+    }
 
-    public void setInventory(ConcurrentMap<String,Integer> inventory){this.inventory=inventory; }
-    public ConcurrentMap<String, Integer> getInventory() {return inventory;}
-
-    public void setJob()
-    {
-        String job = " ";
-
+    public ConcurrentMap<String, Integer> getSkills(){
+        return job.getUserSkills();
     }
 
 }
