@@ -7,6 +7,7 @@ public enum ElementType {
     EARTH(4);
 
     ElementType(int num) {
+
         this.num = num;
     }
 
