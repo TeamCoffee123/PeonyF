@@ -1,26 +1,16 @@
 package com.company.treedisaster;
 
-import com.company.Inventory;
-import com.company.TreeStatus;
-import com.company.Inventory;
-
-import java.util.Scanner;
-
-public class SpiritWaterFungus extends TreeDisaster{
+public class SpiritWaterFungus extends TreeDisaster {
     /*
      물 세균 번식
      */
 
-    public SpiritWaterFungus()
-    {
-        super("물 세균 번식 치료제",1,0,4,0,0,0,0);
-
+    public SpiritWaterFungus() {
+        super("물 세균 번식 치료제", 1, 0, 4, 0, 0, 0, 0);
     }
 
-    public String printSymptom()
-    {
-        String treeSymptom = "물을 주려고 보니 물에 세균이 번식하여 나무의 수분도가 떨어지고 있습니다.";
-        return treeSymptom;
+    public String printSymptom() {
+        return "물을 주려고 보니 물에 세균이 번식하여 나무의 수분도가 떨어지고 있습니다.";
     }
 
 

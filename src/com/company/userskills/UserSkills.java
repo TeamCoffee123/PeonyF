@@ -1,31 +1,17 @@
 package com.company.userskills;
 
+import javafx.util.Pair;
+
 import java.util.concurrent.ConcurrentMap;
 
 public class UserSkills {
-    private final String job;
-    private int uerLevel;
-
-    public UserSkills(String job,int uerLevel)
-    {
-        this.job = job;
-        this.uerLevel = uerLevel;
+    public UserSkills(String job, int uerLevel) {
     }
-
-
-    public String getJob() {
-        return job;
+    private ConcurrentMap<Integer, Pair<String, Integer>> userSkills;
+    public void setUserSkills(ConcurrentMap<Integer, Pair<String, Integer>> userSkills) {
+        this.userSkills = userSkills;
     }
-
-    public int getUerLevel() {
-        return uerLevel;
+    public ConcurrentMap<Integer, Pair<String, Integer>> getUserSkills() {
+        return userSkills;
     }
-
-
-    private ConcurrentMap<String,Integer> userSkills;
-    public void setUserSkills(ConcurrentMap<String,Integer> userSkills)
-    {
-        this.userSkills= userSkills;
-    }
-    public ConcurrentMap<String, Integer> getUserSkills() {  return userSkills;  }
 }

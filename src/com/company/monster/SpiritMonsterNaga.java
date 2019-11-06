@@ -15,9 +15,7 @@ public class SpiritMonsterNaga extends Monster {
     }
 
     @Override
-    public String toString() {
-        String str="[레벨 1 : 나가] 낄낄낄 너따위가 날 상대하겠다고? 쉭쉭 어디한번 싸워볼까?";
-        //return str;
-        return super.toString();
+    public String scriptMonster() {
+        return "[레벨 1 : 나가] 낄낄낄 너따위가 날 상대하겠다고? 쉭쉭 어디한번 싸워볼까?";
     }
 }

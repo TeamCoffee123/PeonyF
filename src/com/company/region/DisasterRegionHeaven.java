@@ -7,30 +7,29 @@ import java.util.List;
 
 public class DisasterRegionHeaven extends DisasterRegion {
     //spirit disaster
-    SpiritFertileLand spiritFertileLand = new SpiritFertileLand();
-    SpiritFloodProtection spiritFloodProtection = new SpiritFloodProtection();
-    SpiritPreventEarthquake spiritPreventEarthquake = new SpiritPreventEarthquake();
-    SpiritPreventWeed spiritPreventWeed = new SpiritPreventWeed();
-    SpiritRemoveWorms spiritRemoveWorms = new SpiritRemoveWorms();
-    SpiritWaterControl spiritWaterControl = new SpiritWaterControl();
-    SpiritWaterFungus spiritWaterFungus = new SpiritWaterFungus();
-    SpiritWaterPollution spiritWaterPollution = new SpiritWaterPollution();
+    TreeDisaster spiritFertileLand = new SpiritFertileLand();
+    TreeDisaster spiritFloodProtection = new SpiritFloodProtection();
+    TreeDisaster spiritPreventEarthquake = new SpiritPreventEarthquake();
+    TreeDisaster spiritPreventWeed = new SpiritPreventWeed();
+    TreeDisaster spiritRemoveWorms = new SpiritRemoveWorms();
+    TreeDisaster spiritWaterControl = new SpiritWaterControl();
+    TreeDisaster spiritWaterFungus = new SpiritWaterFungus();
+    TreeDisaster spiritWaterPollution = new SpiritWaterPollution();
 
     //middle disaster
-    MiddleWindMissingItem middleWindMissingItem = new MiddleWindMissingItem();
-    MiddleWindControl middleWindControl = new MiddleWindControl();
-    MiddleStrongWind middleStrongWind = new MiddleStrongWind();
-    MiddleErodeHurri middleErodeHurri = new MiddleErodeHurri();
+    TreeDisaster middleWindMissingItem = new MiddleWindMissingItem();
+    TreeDisaster middleWindControl = new MiddleWindControl();
+    TreeDisaster middleStrongWind = new MiddleStrongWind();
+    TreeDisaster middleErodeHurri = new MiddleErodeHurri();
 
     //heaven disaster
-    HeavenMildClimate heavenMildClimate = new HeavenMildClimate();
-    HeavenSunBlock heavenSunBlock = new HeavenSunBlock();
-    HeavenTempDes heavenTempDes = new HeavenTempDes();
-    HeavenTempRise heavenTempRise = new HeavenTempRise();
+    TreeDisaster heavenMildClimate = new HeavenMildClimate();
+    TreeDisaster heavenSunBlock = new HeavenSunBlock();
+    TreeDisaster heavenTempDes = new HeavenTempDes();
+    TreeDisaster heavenTempRise = new HeavenTempRise();
 
 
-    public DisasterRegionHeaven()
-    {
+    public DisasterRegionHeaven() {
         super(90);
         final List<TreeDisaster> disasterList = new ArrayList<>();
 

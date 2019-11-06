@@ -6,17 +6,16 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class DisasterRegionSpirit extends DisasterRegion {
-    SpiritFertileLand spiritFertileLand = new SpiritFertileLand();
-    SpiritFloodProtection spiritFloodProtection = new SpiritFloodProtection();
-    SpiritPreventEarthquake spiritPreventEarthquake = new SpiritPreventEarthquake();
-    SpiritPreventWeed spiritPreventWeed = new SpiritPreventWeed();
-    SpiritRemoveWorms spiritRemoveWorms = new SpiritRemoveWorms();
-    SpiritWaterControl spiritWaterControl = new SpiritWaterControl();
-    SpiritWaterFungus spiritWaterFungus = new SpiritWaterFungus();
-    SpiritWaterPollution spiritWaterPollution = new SpiritWaterPollution();
+    TreeDisaster spiritFertileLand = new SpiritFertileLand();
+    TreeDisaster spiritFloodProtection = new SpiritFloodProtection();
+    TreeDisaster spiritPreventEarthquake = new SpiritPreventEarthquake();
+    TreeDisaster spiritPreventWeed = new SpiritPreventWeed();
+    TreeDisaster spiritRemoveWorms = new SpiritRemoveWorms();
+    TreeDisaster spiritWaterControl = new SpiritWaterControl();
+    TreeDisaster spiritWaterFungus = new SpiritWaterFungus();
+    TreeDisaster spiritWaterPollution = new SpiritWaterPollution();
 
-    public DisasterRegionSpirit()
-    {
+    public DisasterRegionSpirit() {
         super(0);
         final List<TreeDisaster> disasterList = new ArrayList<>();
         disasterList.add(spiritFertileLand);
@@ -29,7 +28,6 @@ public class DisasterRegionSpirit extends DisasterRegion {
         disasterList.add(spiritWaterPollution);
         setDisastersList(disasterList);
     }
-
 
 
 }

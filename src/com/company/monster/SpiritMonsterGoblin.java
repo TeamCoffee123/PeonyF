@@ -14,10 +14,8 @@ public class SpiritMonsterGoblin extends Monster {
         setSkills(skills);
     }
 
-    public String toString() //질문하기
+    public String scriptMonster() //질문하기
     {
-        String str = "[레벨 2 : 고블린] 정령....발견....죽인다......";
-        //return str;
-        return super.toString();
+        return "[레벨 2 : 고블린] 정령....발견....죽인다......";
     }
 }

@@ -1,19 +1,25 @@
 package com.company.region;
 
 import com.company.TreeHeight;
+import com.company.User;
+import com.company.monster.Monster;
 
 import java.util.Scanner;
 
 public class MonsterRegionViewer {
     TreeHeight level = new TreeHeight();
-    //SpiritMonsterLevel1 SPL1 = new SpiritMonsterLevel1();
-    MonsterRegionSpirit spirit = new MonsterRegionSpirit();
-    MonsterRegionMiddle middle = new MonsterRegionMiddle();
-    MonsterRegionHeaven heaven = new MonsterRegionHeaven();
+
+    MonsterRegion spirit = new MonsterRegionSpirit();
+    MonsterRegion middle = new MonsterRegionMiddle();
+    MonsterRegion heaven = new MonsterRegionHeaven();
+
+    private User user;
+
 
     Scanner sc = new Scanner(System.in);
 
-    public void RegionIn(){
+    public void RegionIn(User user){
+        this.user =user;
 
         System.out.println("――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――");
         System.out.println(" 레벨에 따른 던전으로 이동해 드리겠습니다. 현재레벨: "+level.treeHeight+"입니다.");
@@ -24,38 +30,35 @@ public class MonsterRegionViewer {
         System.out.println("――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――");
         System.out.println();
         System.out.println("원하시는 지역을 선택해주세요 >>>>>>>\t");
-        int dungeonChoice  = sc.nextInt();
+       final int dungeonChoice  = sc.nextInt();
         switch(dungeonChoice)
         {
 
             case 1 :
-                spirit.makeMonster();
-               // spirit.SetSpirit();
-                //SPL1.SpiritM1Call();
-
-                break;
-            case 2 :
-                if(level.treeHeight >=60)
+                final Monster monster = spirit.makeMonster();
+                while(true) //싸우는 부분 구현
                 {
+                    final int a = sc.nextInt();
+                   // monster.attacked(user.getSkills().);
+                    break;
+                }
+
+
+            case 2 :
+                if(level.treeHeight >=60) {
                     middle.makeMonster();
                     //던전입장 가능
 
-                }
-                else
-                {
+                }  else   {
                     System.out.println("중간로 이동하기엔 레벨이 낮습니다.");
 
                 }
                 break;
             case 3 :
-                if(level.treeHeight >= 90)
-                {
+                if(level.treeHeight >= 90) {
                     heaven.makeMonster();
                     //던전입장 가능
-
-                }
-                else
-                {
+                }else{
                     System.out.println("천상계로 이동하기엔 레벨이 낮습니다.");
 
                 }

@@ -6,22 +6,23 @@ import java.util.Collections;
 import java.util.List;
 
 public class DisasterRegion {
-    private  int accessLevel;
+    private final int limitedLevel;
     private List<TreeDisaster> disastersList;
 
-    public DisasterRegion(int accessLevel)
-    {
-        this.accessLevel = accessLevel;
+    public DisasterRegion(int limitedLevel) {
+
+        this.limitedLevel = limitedLevel;
     }
 
+
     public void setDisastersList(List<TreeDisaster> disastersList) {
+
         this.disastersList = disastersList;
     }
 
-    public TreeDisaster makeDisaster()
-    {
+    public TreeDisaster makeDisaster() {
         Collections.shuffle(disastersList);
-        return  disastersList.get(0);
+        return disastersList.get(0);
     }
 
 }

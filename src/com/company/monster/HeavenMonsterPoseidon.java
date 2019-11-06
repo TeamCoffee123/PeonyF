@@ -16,7 +16,7 @@ public class HeavenMonsterPoseidon extends Monster {
     }
 
     @Override
-    public String toString() {
-        return super.toString();
+    public String scriptMonster() {
+        return super.scriptMonster();
     }
 }

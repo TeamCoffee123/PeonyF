@@ -1,6 +1,5 @@
 package com.company.region;
 
-import com.company.monster.MiddleMonsterArges;
 import com.company.treedisaster.*;
 
 import java.util.ArrayList;
@@ -8,25 +7,23 @@ import java.util.List;
 
 public class DisasterRegionMiddle extends DisasterRegion {
     //spirit disaster
-    SpiritFertileLand spiritFertileLand = new SpiritFertileLand();
-    SpiritFloodProtection spiritFloodProtection = new SpiritFloodProtection();
-    SpiritPreventEarthquake spiritPreventEarthquake = new SpiritPreventEarthquake();
-    SpiritPreventWeed spiritPreventWeed = new SpiritPreventWeed();
-    SpiritRemoveWorms spiritRemoveWorms = new SpiritRemoveWorms();
-    SpiritWaterControl spiritWaterControl = new SpiritWaterControl();
-    SpiritWaterFungus spiritWaterFungus = new SpiritWaterFungus();
-    SpiritWaterPollution spiritWaterPollution = new SpiritWaterPollution();
+    TreeDisaster spiritFertileLand = new SpiritFertileLand();
+    TreeDisaster spiritFloodProtection = new SpiritFloodProtection();
+    TreeDisaster spiritPreventEarthquake = new SpiritPreventEarthquake();
+    TreeDisaster spiritPreventWeed = new SpiritPreventWeed();
+    TreeDisaster spiritRemoveWorms = new SpiritRemoveWorms();
+    TreeDisaster spiritWaterControl = new SpiritWaterControl();
+    TreeDisaster spiritWaterFungus = new SpiritWaterFungus();
+    TreeDisaster spiritWaterPollution = new SpiritWaterPollution();
 
     //middle disaster
-    MiddleWindMissingItem middleWindMissingItem = new MiddleWindMissingItem();
-    MiddleWindControl middleWindControl = new MiddleWindControl();
-    MiddleStrongWind middleStrongWind = new MiddleStrongWind();
-    MiddleErodeHurri middleErodeHurri = new MiddleErodeHurri();
+    TreeDisaster middleWindMissingItem = new MiddleWindMissingItem();
+    TreeDisaster middleWindControl = new MiddleWindControl();
+    TreeDisaster middleStrongWind = new MiddleStrongWind();
+    TreeDisaster middleErodeHurri = new MiddleErodeHurri();
 
 
-
-    public DisasterRegionMiddle()
-    {
+    public DisasterRegionMiddle() {
         super(60);
         final List<TreeDisaster> disasterList = new ArrayList<>();
 

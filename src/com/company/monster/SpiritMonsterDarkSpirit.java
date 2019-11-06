@@ -14,10 +14,8 @@ public class SpiritMonsterDarkSpirit extends Monster{
         setSkills(skills);
     }
 
-    public String toString()
+    public String scriptMonster()
     {
-        String str = "[레벨 3 : 다크 정령]나도 한때 너와 같은 정령이였어.. 나도.. 정령이었다고!!";
-        //return str;
-        return super.toString();
+        return "[레벨 3 : 다크 정령]나도 한때 너와 같은 정령이였어.. 나도.. 정령이었다고!!";
     }
 }

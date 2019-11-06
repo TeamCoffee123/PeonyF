@@ -17,8 +17,8 @@ public class MiddleMonsterTethys extends Monster {
     }
 
     @Override
-    public String toString() {
-        String str=" ";
-        return super.toString();
+    public String scriptMonster() {
+        String script=" ";
+        return super.scriptMonster();
     }
 }
