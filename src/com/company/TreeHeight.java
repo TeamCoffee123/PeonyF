@@ -1,5 +1,6 @@
 package com.company;
 
 public class TreeHeight {
-    int treeHeight;
+    public int treeHeight;
+
 }
